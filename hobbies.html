@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f3e5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 32px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b3e5fc;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #4a148c;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #004080;
+            margin-top: 0%;
+        }
+
+        .decoration {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #512da8;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .decoration.heart::before {
+            content: '♥';
+            color: white;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+        }
+
+        .decoration.music::before {
+            content: '♪';
+            color: white;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+        }
+
+        .decoration.book::before {
+            content: '📚';
+            color: white;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+            display: block
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: 250px;
+            border-bottom: 5px solid #512da8;
+        }
+
+        .gallery-item .description {
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(86, 2, 94);
+            color: #fff
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-credit {
+            font-size: 14px;
+            color: #6a1b9a;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa🦢</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html" target="blank">Personal Information</a>
+            <a href="family.html" target="blank">Family</a>
+            <a href="gallery.html" target="blank">Gallery</a>
+            <a href="hobbies.html" target="blank">Hobbies</a>
+            <a href="friends.html" target="blank">Friends</a>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="decoration heart"></div>
+        <h2>What I Love</h2>
+        <p>Sharing my passions and interests with the world.</p>
+        <div class="container">
+            <div class="gallery-item">
+                <a href="https://shopee.com.my/" target="_blank">
+                <img src="img/shop.jpg" alt="Image 1">
+                </a>
+                <div class="description">SHOPPING</div>
+            </div>
+            <div class="gallery-item">
+                <a href="https://www.hmetro.com.my/" target="_blank">
+                <img src="img/book.jpg" alt="Image 2">
+                </a>
+                <div class="description">READING</div>
+            </div>   
+             <div class="gallery-item">
+                <a href="https://music.youtube.com/" target="_blank">
+                <img src="img/music.jpg" alt="Image 3">
+                 </a>
+                 <div class="description">LISTEN TO MUSIC</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="decoration music"></div>
+        <h2>Music</h2>
+        <p>Exploring different genres and sharing my favorite tunes.</p>
+        <div class="container">
+            <div class="gallery-item">
+                <img src="img/riize.jpg" alt="Image 3">
+                <div class="description">My favorite song of Riize</div>
+                <audio controls>
+                    <source src="rizzim.mp3" type="audio/ogg">
+                    <source src="rizzim.mp3" type="audio/mpeg">
+                </audio><br>
+                <video width="300" controls>
+                    <source src="rizzmv.mp4" type="video/mp4">
+                    <source src="rizzmv.mp4" type="video/ogg">
+                </video>
+                <p class="video-credit">Video credit: Imposibble: Riize</p>
+                <p class="music-credit">Music credit: Riize - Imposibble</p>
+                
+            </div>
+            <div class="gallery-item">
+                <img src="img/bnd.jpg" alt="Image 4">
+                <div class="description">My favorite song of BND</div>
+                <audio controls>
+                    <source src="ews.mp3" type="audio/ogg">
+                    <source src="ews.mp3" type="audio/mpeg">
+                </audio><br>
+                <video width="300" controls>
+                    <source src="ewfmv.mp4" type="video/mp4">
+                    <source src="ewfmv.mp4" type="video/ogg">
+                </video>
+                <p class="video-credit">Video credit: Earth Wind & Fire: Boynextdoor</p>
+                <p class="music-credit">Music credit: Boynextdoor - Earth Wind & Fire</p>
+            </div>   
+            <div class="gallery-item">
+                   <img src="img/zb.jpg" alt="Image 3">
+                   <div class="description">My favorite song of Zerobaseone</div>
+                   <audio controls>
+                    <source src="zb1sw.mp3" type="audio/ogg">
+                    <source src="zb1sw.mp3" type="audio/mpeg">
+                </audio><br>
+                <video width="300" controls>
+                    <source src="zb1swmv.mp4" type="video/mp4">
+                    <source src="zb1swmv.mp4" type="video/ogg">
+                </video>
+                <p class="video-credit">Video credit: Sweat :Zerobaseone</p>
+                <p class="music-credit">Music credit: Zerobaseone - Sweat</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="decoration book"></div>
+        <h2>Reading</h2>
+        <p>Diving into books and sharing my thoughts and reviews.</p>
+        <div class="container">
+            <div class="gallery-item">
+                <img src="img/dts.jpg" alt="Image 5">
+                <div class="description">Title : Dia Tetap Sempurna</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/cc.jpg" alt="Image 6">
+                <div class="description">Title : Chef Cuisine</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/dh.jpg" alt="Image 7">
+                <div class="description">Title : Dheo</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

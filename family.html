@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: #f3e5f5;
+            margin: 0;
+            padding: 0;
+            color: #4a148c;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+           
+        }
+
+        .logo {
+            font-size: 32px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d1c4e9;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .container {
+            padding: 120px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #7b1fa2;
+            margin-bottom: 20px;
+            font-family: 'Broadway', sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            color: #7b1fa2;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #ede7f6;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #7b1fa2;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(86, 2, 94);
+            color: white;
+            position:relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa 🦢</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobbies.html" target="_blank">Hobbies</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>&#129505; Meet My Family &#129505;</h1>
+        <div class="image-container">
+            <img src="img/fam.jpg" alt="Family" width="300" height="450">
+        </div>
+        <p>
+            Welcome to a special corner of my website dedicated to my family. Family is the cornerstone of my life, and I'm excited to share a bit about the wonderful people who support and inspire me every day.
+        </p>
+        <h2>My Parents</h2>
+        <div class="image-container">
+            <img src="img/par.jpg" alt="Parents" width="300" height="300">
+        </div>
+        <p>
+            I am fortunate to have incredibly supportive parents who have always encouraged me to pursue my dreams. Nor Hisham bin Abdul Ghani and Sohanah binti Yusoff have taught me the values of hard work, kindness, and perseverance. Their unwavering love and guidance have been the foundation of my journey.
+        </p>
+        <h2>My Siblings</h2>
+        <div class="image-container">
+            <img src="img/sib.jpg" alt="Siblings" width="300" height="300">
+        </div>
+        <p>
+            Growing up with 5 siblings has been a delightful adventure. Each one of us has our unique personality, but together, we make an unbeatable team.
+        </p>
+        <ul>
+            <li>Nur Shafiqa: The eldest, a true role model who always sets the bar high.</li>
+            <li>Muhammad Izzat Syamil: The creative soul of the family, always bringing fresh ideas and artistic flair into our lives. He loves cooking.</li>
+            <li>Muhammad Irfan Syamil: The adventurer, always seeking new experiences and pushing boundaries. He has a passion for keeping our family outings exciting and dynamic.</li>
+            <li>Muhammad Iman Syamil: The youngest, full of energy and curiosity.</li>
+        </ul>
+        <h2>Our Home</h2>
+        <p>
+            Our home is a place of warmth and laughter. It's where we celebrate our successes, support each other through challenges, and create memories that last a lifetime.
+        </p>
+        <p>
+            Thank you for taking the time to learn about my family. They are my greatest supporters, and their love and encouragement are what drive me to be the best version of myself.
+        </p>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.
+    </div>
+</body>
+
+</html>

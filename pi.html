@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3e5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b3e5fc;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 120px 20px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #9c27b0;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #7b1fa2;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #9c27b0;
+        }
+
+        .bio-box {
+            background-color: #e1bee7;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .bio-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .bio-table th,
+        .bio-table td {
+            border: 1px solid #9c27b0;
+            padding: 10px;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .bio-table th {
+            background-color: #ba68c8;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .bio-table td {
+            background-color: #f3e5f5;
+        }
+
+        .bio-table td,
+        .bio-table th {
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(86, 2, 94);
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .decorative-line {
+            height: 5px;
+            background-color: #9c27b0;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .picture-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .picture-gallery a {
+            display: block;
+            width: 150px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .picture-gallery a:hover {
+            transform: scale(1.05);
+        }
+
+        .picture-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa🦢</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html" target="blank">Personal Information</a>
+            <a href="family.html" target="blank">Family</a>
+            <a href="gallery.html" target="blank">Gallery</a>
+            <a href="hobbies.html" target="blank">Hobbies</a>
+            <a href="friends.html" target="blank">Friends</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>My Biodata</h1>
+        <img src="img/me.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="bio-box">
+            <h2>Biodata</h2>
+            <div class="decorative-line"></div>
+            <table class="bio-table">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Nur Syahirah Anisa Binti Nor Hisham</td>
+                </tr>
+                <tr>
+                    <td>Place of Birth</td>
+                    <td>Perlis, Malaysia</td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>Reading, Listen to music</td>
+                </tr>
+                <tr>
+                    <td>Interest</td>
+                    <td>Technology, Music</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>syahieyrah.nieysa@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td>019-5940124</td>
+                </tr>
+                <tr>
+                    <td>Level of Education</td>
+                    <td>Elementary School - Sekolah Kebangsaan Panggau<br>High School - Sekolah Menengah Kebangsaan Dato Ali' Ahmad<br>Pra U - Sekolah Menengah Kebangsaan Putra<br>Higher Level (current) - UiTM, Sungai Petani </td>
+                </tr>
+                <tr>
+                    <td>Results:</td>
+                    <td>UPSR : 2A 2B 1C <br>SPM : 5A 1B 2C<br>STPM : 3.17<br>Current CGPA : 3.07</td>
+                </tr>
+                <tr>
+                    <td>Birth Order</td>
+                    <td>Three</td>
+                </tr>
+                <tr>
+                    <td>Siblings</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>How to Enter UITM</td>
+                    <td>Through UPU</td>
+                </tr>
+                <tr>
+                    <td>Is UITM the First Choice</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Aspiration</td>
+                    <td>To become a successful software developer</td>
+                </tr>
+            </table>
+        </div>
+        <div class="picture-gallery">
+            <a href="https://www.facebook.com/p/SK-Panggau-100063593860046/" target="_blank">
+                <img src="img/skp.jpg" alt="Picture 1">
+            </a>
+            <a href="https://www.facebook.com/p/SMK-Dato-Ali-Ahmad-Perlis-100063592481467/" target="_blank">
+                <img src="img/smkdaa.jpg" alt="Picture 2">
+            </a>
+            <a href="https://www.facebook.com/pibgsmkputra/?locale=ms_MY" target="_blank">
+                <img src="img/putra.jpeg" alt="Picture 3">
+            </a>
+            <a href="https://uitm.edu.my/index.php/en/" target="_blank">
+                <img src="img/uitm.jpeg" alt="Picture 4">
+            </a>
+            
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUR SYAHIRAH ANISA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f3e5f5;
+            color: #4a148c;
+            background-image: url('img/wal.jpg');
+            background-size: cover;
+            background-position: center; 
+             background-repeat: no-repeat;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+           
+        }
+
+        .logo {
+            font-size: 32px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d1c4e9;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .container {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        .hero {
+            background-color: #e1bee7;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            z-index: 20;
+            max-width: 90%;
+            animation: pop-up 0.5s ease-out;
+        }
+
+        @keyframes pop-up {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            color: #4a148c;
+            font-size: 2.5em;
+            margin: 0 0 20px 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 0 0 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #f3e5f5;
+            background-color: #6a1b9a;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4a148c;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgb(86, 2, 94);
+            color: #f3e5f5;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa🦢</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobbies.html" target="_blank">Hobbies</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+        <br>
+    </header>
+
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="hero">
+            <h1>WELCOME TO MY WEBSITE!</h1>
+            <p>I hope you find it adorable! &#128521;</p>
+            <a href="pi.html" class="button"  target="_blank">Learn More About Me</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.
+    </footer>
+</body>
+</html>

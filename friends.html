@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <style>
+		    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f3e5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 32px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b3e5fc;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .friend-card {
+            background-color: #e0ffff;
+            border: 1px solid #b0c4de;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .friend-card h3 {
+            margin-top: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 15% auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(86, 2, 94);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa🦢</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html"target="blank">Personal Information</a>
+            <a href="family.html" target="blank">Family</a>
+            <a href="gallery.html" target="blank">Gallery</a>
+            <a href="hobbies.html" target="blank">Hobbies</a>
+            <a href="friends.html" target="blank">Friends</a>
+        </nav>
+    </header>
+    <main>
+			<div class="friend-card">
+				<center> <h2>˙✧˖°📷 ༘ ⋆｡˚Capture Memories With Them ˙✧˖°📷 ༘ ⋆｡˚</h2></center>
+			</div>
+        <section id="primary">
+            <h2>Primary School Friends</h2>
+            <div class="friend-card">
+                <h3>Friends from SK Panggau</h3>
+                <p>from 2008 until 2015.</p>
+                <div class="gallery">
+                    <img src="img/sk1.jpg" alt="Friend Image 1">
+                    <img src="img/sk2.jpg" alt="Friend Image 2">
+                    <img src="img/sk3.jpg" alt="Friend Image 3">
+                    <img src="img/sk4.jpg" alt="Friend Image 1">
+                    <img src="img/sk5.jpg" alt="Friend Image 2">
+                    <img src="img/sk6.jpg" alt="Friend Image 3">
+                    <img src="img/sk7.jpg" alt="Friend Image 2">
+                    <img src="img/sk8.jpg" alt="Friend Image 3">
+                    <img src="img/sk9.jpg" alt="Friend Image 3">
+                    <img src="img/sk10.jpg" alt="Friend Image 3">
+                    <img src="img/sk11.jpg" alt="Friend Image 3">
+                </div>
+            </div>
+           
+        </section>
+        <section id="highschool">
+            <h2>High School Friends</h2>
+            <div class="friend-card">
+                <h3>Friends from SMK Dato Ali' Ahmad</h3>
+                <p> from 2016 until 2021.</p>
+                <div class="gallery">
+                    <img src="img/dd1.jpg" alt="Friend Image 4">
+                    <img src="img/dd2.jpg" alt="Friend Image 5">
+                    <img src="img/dd3.jpg" alt="Friend Image 6">
+                    <img src="img/dd4.jpg" alt="Friend Image 7">
+                    <img src="img/dd5.jpg" alt="Friend Image 4">
+                    <img src="img/dd6.jpg" alt="Friend Image 5">
+                    <img src="img/dd7.jpg" alt="Friend Image 6">
+                    <img src="img/dd8.jpg" alt="Friend Image 7">
+                    <img src="img/dd9.jpg" alt="Friend Image 7">
+                    <img src="img/dd10.jpg" alt="Friend Image 7">
+                    <img src="img/dd11.jpg" alt="Friend Image 7">
+                </div>
+            </div>
+
+        </section>
+        <section id="stpm">
+            <h2>STPM</h2>
+            <div class="friend-card">
+                <h3>Friends from SMK Putra</h3>
+                <p>2021 until 2023.</p>
+                <div class="gallery">
+                    <img src="img/stp1.jpg" alt="Friend Image 8">
+                    <img src="img/stp2.jpg" alt="Friend Image 9">
+                    <img src="img/stp3.jpg" alt="Friend Image 10">
+                    <img src="img/stp4.jpg" alt="Friend Image 11">
+                    <img src="img/stp5.jpg" alt="Friend Image 12">
+                    <img src="img/stp11.jpg" alt="Friend Image 13">
+                    <img src="img/stp7.jpg" alt="Friend Image 14">
+                    <img src="img/stp8.jpg" alt="Friend Image 15">
+                    <img src="img/stp9.jpg" alt="Friend Image 16">
+                    <img src="img/stp10.jpg" alt="Friend Image 16">
+                    <img src="img/stp12.jpg" alt="Friend Image 16">
+                </div>
+            </div>
+        </section>
+        <section id="degree">
+            <h2>UiTM</h2>
+            <div class="friend-card">
+                <h3>Uitm Merbok</h3>
+                <p>2023-current.</p>
+                <div class="gallery">
+                    <img src="img/deg1.jpg" alt="Friend Image 17">
+                    <img src="img/deg2.jpg" alt="Friend Image 18">
+                    <img src="img/deg3.jpg" alt="Friend Image 19">
+                    <img src="img/deg4.jpg" alt="Friend Image 20">
+                    <img src="img/deg5.jpg" alt="Friend Image 21">
+                    <img src="img/deg6.jpg" alt="Friend Image 22">
+                    <img src="img/deg7.jpg" alt="Friend Image 23">
+                    <img src="img/deg10.jpg" alt="Friend Image 24">
+                    <img src="img/deg9.jpg" alt="Friend Image 25">
+                    <img src="img/deg11.jpg" alt="Friend Image 24">
+                    <img src="img/deg12.jpg" alt="Friend Image 25">
+
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="Expanded Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.</p>
+    </footer>
+
+  
+</body>
+</html>

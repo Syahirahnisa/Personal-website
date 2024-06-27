@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f0ff;
+            color: #5c2d91;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px; 
+            background: rgb(86, 2, 94);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px; 
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px; 
+            color: antiquewhite;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px; 
+            transition: color 0.3s;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b3e5fc;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .gallery-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 100px 20px 20px; 
+            background-color: #e6d6ff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .gallery-section {
+            margin-bottom: 40px;
+        }
+
+        .gallery-section h2 {
+            text-align: center;
+            color: #4b0082;
+            background-color: #d1c4e9;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 30%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ba68c8;
+            transition: transform 0.2s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .decorative-element {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .decorative-element img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-container img {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Nisa🦢</a> 
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="pi.html" target="blank">Personal Information</a>
+            <a href="family.html" target="blank">Family</a>
+            <a href="gallery.html" target="blank">Gallery</a>
+            <a href="hobbies.html" target="blank">Hobbies</a>
+            <a href="friends.html" target="blank">Friends</a>
+        </nav>
+    </header>
+    
+    <div class="gallery-container">
+        <div class="decorative-element"> 
+        </div>
+
+        <div class="gallery-section">
+            <div class="decorative-element">
+                <h2> ღ Welcome to My Gallery! ღ</h2>
+            </div>
+
+            <div class="gallery-section" id="family">
+                <h2>Family</h2>
+                <div class="image-container">
+                    <img src="img/4f.jpg" alt="Me & Family 1">
+                    <img src="img/f11.jpg" alt="Family 2">
+                    <img src="img/f10.jpg" alt="Family 3">
+                    <img src="img/raya1.jpg" alt="Family 3">
+                    <img src="img/raya3.jpg" alt="with kakak">
+                    <img src="img/fam.jpg">
+                </div>
+            </div>
+            <div class="gallery-section" id="school life">
+                <h2>School life</h2>
+                <div class="image-container">
+                    <img src="img/fri1.jpg" alt="School 1">
+                    <img src="img/stp12.jpg" alt="School 2">
+                    <img src="img/fri3.jpg" alt="School 3">
+                    <img src="img/sk7.jpg" alt="School 1">
+                    <img src="img/sk9.jpg" alt="School 2">
+                    <video width="300" controls>
+                        <source src="kha.mp4" type="video/mp4">
+                        <source src="kha.mp4" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+            <div class="gallery-section" id="degree">
+                <h2>Degree</h2>
+                <div class="image-container">
+                    <img src="img/deg1.jpg" alt="Degree 1">
+                    <img src="img/deg2.jpg" alt="Degree 1">
+                    <img src="img/deg3.jpg" alt="Degree 1">
+                    <img src="img/deg4.jpg" alt="Degree 1">
+                    <img src="img/deg5.jpg" alt="Degree 1">
+                    <img src="img/deg6.jpg" alt="Degree 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 NUR SYAHIRAH ANISA IML470. All rights reserved.
+    </div>
+</body>
+</html>
